@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabaz Bagwan | DevOps Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .name {
+            font-size: 36px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 20px;
+            animation: slideInLeft 1s;
+        }
+
+        .skill {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 20px;
+            max-width: 300px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            animation: fadeIn 2s;
+        }
+
+        .skill:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        .skill:hover {
+            transform: scale(1.05);
+        }
+
+        .skill::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #00d2ff, #3a7bd5);
+            transform: scaleX(0);
+            transform-origin: left;
+            z-index: -1;
+            transition: transform 0.3s ease;
+        }
+
+        .skill:hover::before {
+            transform: scaleX(1);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            color: #777;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="name">Arabaz Bagwan</div>
+        <p class="subtitle">DevOps Engineer</p>
+    </div>
+
+    <div class="skills-container">
+        <div class="skill">
+            <h2>AWS Cloud Services</h2>
+            <p>EC2, VPC, S3, IAM, CloudWatch</p>
+        </div>
+
+        <div class="skill">
+            <h2>CI/CD with Jenkins</h2>
+            <p>Setting up pipelines, automation</p>
+        </div>
+
+        <div class="skill">
+            <h2>Containerization with Docker</h2>
+            <p>Creating Docker images, managing containers</p>
+        </div>
+
+        <div class="skill">
+            <h2>Configuration Management (Ansible)</h2>
+            <p>Automating deployments, managing configurations</p>
+        </div>
+
+        <div class="skill">
+            <h2>Infrastructure as Code (Terraform)</h2>
+            <p>Creating and managing infrastructure</p>
+        </div>
+
+        <div class="skill">
+            <h2>Version Control with Git/GitHub</h2>
+            <p>Managing repositories, branching</p>
+        </div>
+
+        <div class="skill">
+            <h2>Linux Administration</h2>
+            <p>Shell scripting, server management</p>
+        </div>
+
+        <div class="skill">
+            <h2>Monitoring and Logging (CloudWatch)</h2>
+            <p>Setting up alerts, monitoring resources</p>
+        </div>
+
+        <div class="skill">
+            <h2>Container Orchestration (Kubernetes)</h2>
+            <p>Managing containerized applications</p>
+        </div>
+
+        <div class="skill">
+            <h2>Configuration Management (Ansible)</h2>
+            <p>Automating deployments, managing configurations</p>
+        </div>
+
+        <div class="skill">
+            <h2>Build Automation (Maven)</h2>
+            <p>Compiling and building source code</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
